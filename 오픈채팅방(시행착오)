@@ -128,3 +128,83 @@ void main() {
 //Enter uid1234 Muzi Enter uid4567 Prodo Leave uid1234
 
 //실패
+#include <string>
+#include <vector>
+#include <iostream>
+#include <cstring>
+#include<map>
+
+using namespace std;
+
+string command[3];
+string p;
+int stac = 0, stac2 = 0;
+string s;
+vector<string> answer;
+map <string, string> memory;
+void bu() {
+	if (command[0] == "Enter")
+	{
+		if(memory.count(command[1]) != 0)
+		memory.insert({ command[1],command[2]});
+		else {
+			memory[command[1]] = "";
+			memory[command[1]] = command[2];
+		}
+	}
+	else if (command[0] == "Change") {
+		memory[command[1]] = "";
+		memory[command[1]] = command[2];
+	}
+}
+void bu2() {
+	//cout << endl<<command[0]<<"   <- command";
+	if (command[0] == "Enter")
+	{
+		answer.push_back(memory[command[1]] + "님이 들어왔습니다.");
+	}
+	else if (command[0] == "Leave") {
+		answer.push_back(memory[command[1]] + "님이 나갔습니다.");
+	}
+}
+vector<string> solution(vector<string> record) {
+
+
+	for (int i = 0; i < record.size(); i++) {
+		p += record.at(i);
+	}
+	for (int i = 0; i < p.length(); i++) {
+		if (p[i] == ' ') {
+			command[stac] = s;
+			s = ""; stac++;
+		}
+		else s += p[i];
+		if (stac == 3 || (command[0] == "Leave" && stac == 2)) {
+			stac = 0; bu(); 
+		}
+	}command[2] += s;
+	bu(); stac = 0;
+	for (int i = 0; i < p.length(); i++) {
+		if (p[i] == ' ') {
+			command[stac] = s;
+			s = ""; stac++;
+		}
+		else s += p[i];
+		if (stac == 3 || (command[0] == "Leave" && stac == 2)) { stac = 0;bu2(); }
+	}command[2] += s;
+	bu2();
+	for (int i = 0; i < answer.size(); i++) {
+		cout <<  answer.at(i) << endl;
+	}
+	return answer;
+}
+void main() {
+	vector<string> new_id;
+	string a;
+	getline(cin, a);
+	new_id.push_back(a);
+	solution(new_id);
+}//Enter uid1234 Muzi Enter uid4567 Prodo Leave uid1234 Enter uid1234 Prodo Change uid4567 Ryan
+//Enter uid1234 Muzi Enter uid4567 Prodo Leave uid1234
+
+//거의 
