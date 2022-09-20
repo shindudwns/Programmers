@@ -1,0 +1,52 @@
+#include <string>
+#include <vector>
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+vector<string> solution(vector<string> record) {
+	vector<string> answer;
+	vector<string> command;
+	vector<string> id;
+	vector<string> name;
+	string p; int stac = 0;
+	string s;
+	for (int i = 0; i < record.size();i++) {
+		p += record.at(i);
+	}
+	for (int i = 0; i < p.length(); i++) {
+		if (p[i]==' ') {
+			if (stac == 0)
+				command.push_back(s);
+			else if (stac == 1)
+				id.push_back(s);
+			else {
+				name.push_back(s);
+			}s = ""; stac++;
+		}
+		else s += p[i];
+	}name.push_back(s);
+	if (command == "Enter")
+	{
+
+	}
+	else if (command == "Leave")
+	{
+
+	}
+	else if(command == "Change") {
+
+	}
+	//cout << *a.begin()<<"  a"<<endl;
+	//cout << *b.begin()<<"  b"<<endl;
+	//cout << *c.begin()<<"  c"<<endl;
+	return answer;
+}
+void main() {
+	vector<string> new_id;
+	string a;
+	getline(cin, a);
+	new_id.push_back(a);
+	solution(new_id);
+}//벡터사용
