@@ -1,0 +1,28 @@
+def solution(name):
+    sl=list(name)
+    check =False;
+    con=0
+    c=0
+    for i in sl :
+        if i=='A':
+            if check == False:
+                check == True
+                c=1
+                con=max(con,c)
+            else: 
+                c=c+1
+                con=max(con,c)
+        else : 
+            c=0      
+            check=False     
+    answer=len(sl)-1-con
+    # 대문자 아스키 코드 A~Z 65 - 90
+    for i in sl :
+        target = ord(i)
+        plus=min(target-65,91-target)
+        answer = answer+plus
+    print(answer)
+    return answer
+    
+#연속되는 A의 최대 갯수만큼만 더 빼서 좌우로 가는 값을 기본 스택값에 위아래 값을 더하는 형식으로 코드를 구성했는데  왼쪽으로 갔다가 오른쪽으로 왔다가 왼쪽으로 다시 가야되는
+#방향까지의 스택 수를 구할수가 없어서 틀렸다.
