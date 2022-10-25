@@ -32,6 +32,16 @@ def solution(numbers):
         mx=-1
         for j in range (0,len(numbers)):
             if check[j]==0:
+#                             if check[j]==0:  9일때 스킵 넣어도 
+#                 if numbers[j]==9:
+#                     check_i=j
+#                     mx=numbers[j]
+#                     break
+#                 else:
+#                     k=mx
+#                     mx= vs(mx,numbers[j])
+#                     if mx==numbers[j]:
+#                         check_i=j
                 k=mx
                 mx= vs(mx,numbers[j])
                 if mx==numbers[j]:
