@@ -32,7 +32,7 @@ def solution(numbers):
         mx=-1
         for j in range (0,len(numbers)):
             if check[j]==0:
-#                             if check[j]==0:  9일때 스킵 넣어도 
+#                             if check[j]==0:  9일때 스킵 넣어도 실패
 #                 if numbers[j]==9:
 #                     check_i=j
 #                     mx=numbers[j]
