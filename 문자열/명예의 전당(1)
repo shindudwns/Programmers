@@ -1,0 +1,11 @@
+def solution(k, score):
+    answer=[]
+    meong=[]
+    for i in score:
+        meong.append(i)
+        meong.sort(reverse=True)
+        if len(meong)<=k:
+            answer.append(meong[-1])
+        else:
+            answer.append(meong[k-1])
+    return answer
