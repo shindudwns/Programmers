@@ -8,4 +8,4 @@ def solution(k, score):
             answer.append(meong[-1])
         else:
             answer.append(meong[k-1])
-    return answer
+    return answer;
