@@ -1,4 +1,4 @@
-def solution(k, score):
+def solution(k, score)
     answer=[]
     meong=[]
     for i in score:
