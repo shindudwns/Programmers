@@ -6,5 +6,5 @@ def solution(k, m, score):
         for i in range(m):
             arr.append(score[i+tmp])
         answer+=min(arr)*m
-        tmp+=m
+        tmp+=m#다음 리스트 채울 스택 추가
     return answer
