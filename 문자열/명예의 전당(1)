@@ -1,6 +1,6 @@
 def solution(k, score)
     answer=[]
-    meong=[]
+    meong=[
     for i in score:
         meong.append(i
         meong.sort(reverse=True)
