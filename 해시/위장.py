@@ -10,4 +10,4 @@ def solution(clothes):
             dic[key] = [value]
     for key in dic.keys():
         answer = answer * (len(dic[key]) + 1) # 안입는 경우의 수를 위해 +1
-    return answer - 1
+    return answer - 
