@@ -10,4 +10,4 @@ def solution(cards1, cards2, goal):
             cards2.popleft()
         else:           
             return "No"       
-    return "Yes"
+    return "Yes";
