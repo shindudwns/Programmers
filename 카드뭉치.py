@@ -1,6 +1,6 @@
 from collections import deque
 
-def solution(cards1, cards2, goal):;
+def solution(cards1, cards2, goal):
     cards1=deque(cards1)
     cards2=deque(cards2)
     for i in range(len(goal)):
