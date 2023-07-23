@@ -1,6 +1,6 @@
 def solution(board, moves):
     answer= 0
-    arr=[] # 바구니 리스트ㄹ
+    arr=[] # 바구니 리스트
     for i in range(len(moves)):
         for j in range(len(board[0])):
             if not board[j][moves[i]-1]==0:
