@@ -1,4 +1,4 @@
-def solution(board, moves):
+def solution(board, moves)
     answer= 0
     arr=[] # 바구니 리스트
     for i in range(len(moves)):
