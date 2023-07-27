@@ -1,5 +1,5 @@
 
-// 첫번째 시도  (효율성 테스트 3,4 실패)
+// 첫번째 시도  (효율성 테스트 3,4 실패
 
 def solution(phone_book):   
     for i in range(0,len(phone_book)-1):
