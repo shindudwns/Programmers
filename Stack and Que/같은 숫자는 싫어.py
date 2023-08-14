@@ -4,5 +4,5 @@ def solution(arr):
     for i in range(1,len(arr)):#초기값부터 길이까지
         if(memory!=arr[i]):#전 값이 다르면 저장
             answer.append(arr[i])
-            memory=arr[i]# 전 값
+            memory=arr[i]# 전 값저장함
     return answer
