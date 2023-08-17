@@ -7,7 +7,7 @@ def solution(progresses, speeds):
         else :
             progresses_day.append((100-progresses[i])//speeds[i]+1)
     for i in range(len(progresses_day)):
-        stack=0 #앞에서 뒤에 같은 작업날에 낼 수 있는 지 쌓아주는 stack값
+        stack=0 #앞에서 뒤에 같은 작업날에 낼 수 있는 지 쌓아주는 stack값임
         now=i #i값 변경을 위한 변수 선언
         for j in range(i+1,len(progresses_day)):
             if progresses_day[i]>=progresses_day[j]:#다음 작업물도 같이 낼 수 있을 때
