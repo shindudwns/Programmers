@@ -2,7 +2,7 @@ def solution(clothes):
     dic = {}
     answer = 1
     for i in clothes:
-        key = i[1] # 키값 value 값 구하
+        key = i[1] # 키값 valu값 구하
         value = i[0]
         if key in dic:#값 추가
             dic[key].append(value) 
