@@ -4,7 +4,7 @@ def solution(clothes):
     for i in clothes:
         key = i[1] # 키값 valu값 구하
         value = i[0]
-        if key in dic:#값 추가
+        if key in dic:#값 추
             dic[key].append(value) 
         else:
             dic[key] = [value]
