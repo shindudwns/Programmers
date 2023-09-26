@@ -5,5 +5,5 @@ def solution(strings, n):
         tmp.append(i[n]+i)
     tmp=sorted(tmp)
     for i in tmp:
-        answer.append(i[1:])//asd
+        answer.append(i[1:])//a
     return answer 
