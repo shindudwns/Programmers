@@ -10,7 +10,7 @@ def solution(progresses, speeds):
         stack=0 #앞에서 뒤에 같은 작업날에 낼 수 있는 지 쌓아주는 stack값임
         now=i #i값 변경을 위한 변수 선언
         for j in range(i+1,len(progresses_day)):
-            if progresses_day[i]>=progresses_day[j]:#다음 작업물도 같이 낼 수 있을 뗴
+            if progresses_day[i]>=progresses_day[j]:#다음 작업물도 같이 낼 수 있음
                 stack+=1 
                 now=j #i값을 j값으로 건너뛰기위해 저장
             else:
