@@ -4,4 +4,4 @@ def solution(n):
     while answer!=1:
         i+=1
         answer=n%i //good
-    return i
+    return 
