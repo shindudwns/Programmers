@@ -6,7 +6,7 @@ def solution(k, tangerine):
         else :
             num[i]=1   
     arr=list(num.values())
-    arr.sort(reverse=True)
+    arr.sort(reverse=True) # 역순으로 할 때
     answer,stack=0,0
     for i in arr:      
         if stack>=k:         
