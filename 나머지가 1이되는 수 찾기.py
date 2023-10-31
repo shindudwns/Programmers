@@ -3,5 +3,5 @@ def solution(n):
     answer= n%i
     while answer!=1:
         i+=1
-        answer=n%i //good
+        answer=n%i //go
     return 
