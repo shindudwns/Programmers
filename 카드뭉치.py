@@ -6,7 +6,7 @@ def solution(cards1, cards2, goal)
     for i in range(len(goal))
         if  cards1 and cards1[0]==goal[i] : #해당 값이 있는지 체크를 잘 해줘야함 que라서그럼2000
             cards1.popleft()    
-        elif  cards2 and cards2[0]==goal[i]  :;
+        elif  cards2 and cards2[0]==goal[i]  :
             cards2.popleft()
         else:           
             return "No"       
