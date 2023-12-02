@@ -4,7 +4,7 @@ def solution(answers):
     circle1=[2, 1, 2, 3, 2, 4, 2, 5]; #두번째 사람 패턴리스트
     circle2=[3, 3, 1, 1, 2, 2, 4, 4, 5, 5];#세번째 사람 패턴리스트
     for i in range(len(answers)):
-        if answers[i]-1 == i%5: #첫번째 사람은 정답값에서 1만빼주면 나머지값이 됨.
+        if answers[i]-1 == i%5: #첫번째 사람은 정답값에서 1만빼주면 나머지값
             o[0] += 1
         if answers[i] == circle1[i%len(circle1)]:# 리스트 돌려서 정답값확인
             o[1] += 1
