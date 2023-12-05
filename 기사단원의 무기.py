@@ -13,5 +13,5 @@ def solution(number, limit, power):
         if a>limit:
             dab+=power
         else:
-            dab+=a 
+            dab+=a (
     return dab
