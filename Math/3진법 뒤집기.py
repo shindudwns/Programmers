@@ -1,5 +1,5 @@
 def solution(n):
-    tmp,answer = '',0
+    tmp,answer = '';
     while n>0:
         tmp+=str(n%3)
         n//=3
