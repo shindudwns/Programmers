@@ -10,7 +10,7 @@ def soluti(name):
             else :
                  break
 
-        side = min([side, 2 *i + len(sl) - stack, i + 2 * (len(sl) -stack)])#왼쪽으로 갔다가 오른쪽으로 간 값과 오른쪽으로 갔다가 왼쪽으로 간 값 더하기
+        side = min([side, 2 *i + len(sl) - stack, i + 2 * (len(sl) -stack)])#왼쪽으로 갔다가 오른쪽으로 간 값과 오른쪽으로 갔다가 왼쪽으로 간 값 더
     answer+=side   #for문이 끝나면 더해주기
     
     for i in sl :  # 상하좌우 값 아스키 코드값 만큼 더해주기   대문자 아스키 코드 A~Z 65 - 90
