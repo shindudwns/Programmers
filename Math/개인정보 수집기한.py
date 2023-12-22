@@ -18,7 +18,7 @@ def solution(today, terms, privacies):
     day_=int(day[0])*336+(int(day[1])-1)*28+int(day[2])
     for i in range(len(privacies)):
         deadline=privacies[i][:-2].split(".")
-        dead=int(deadline[0])*336+(int(deadline[1])-1)*28+int(deadline[2])+(dic[privacies[i][-1]])# 파기 기한
+        dead=int(deadline[0])*336+(int(deadline[1])-1)*28+int(deadline[2])+(dic[privacies[i][-1]])# 파기 기
         if dead<=day_:
             answer.append(i+1)
     return answer
