@@ -6,7 +6,7 @@ def solution(answers):
     for i in range(len(answers)):
         if answers[i]-1 == i%5: #첫번째 사람은 정답값에서 1만빼주면 나머지값
             o[0] += 1
-        if answers[i] == circle1[i%len(circle1)]:# 리스트 돌려서 정답값확인
+        if answers[i] == circle1[i%len(circle1)]:# 리스트 돌려서 정답값확
             o[1] += 1
         if answers[i] == circle2[i%len(circle2)]:
             o[2] += 1          
